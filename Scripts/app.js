@@ -1,14 +1,14 @@
 // IIFE - Immediately Invoked Function Expression
 // means -> anonymous self excecuting function
 (function(){
-    let h2 = document.createElement("H2");
+    let h2;
     let Start = function () {
         console.log('%c App Started','color:blue; font-size: 20px');
         
         Main();
 
         let doc = document.getElementById("mainContent");
-
+        let h2 = document.createElement("H2");
         // Create a new h2 tag with a class of Display-2 "My Text Content" as the text
         h2.setAttribute("class","Display-2");
         h2.textContent = "My Text Content";
